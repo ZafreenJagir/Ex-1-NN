@@ -1,7 +1,6 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
+<H3>ENTER YOUR NAME : ZAFREEN J</H3> 
+<H3>ENTER YOUR REGISTER NO : 212223040252</H3>
 <H3>EX. NO.1</H3>
-<H3>DATE</H3>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -115,11 +114,16 @@ print(y)
 ```
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,random_state=25)
 ```
+
+![Screenshot 2024-08-23 212209](https://github.com/user-attachments/assets/1a8da19f-1632-45ad-907f-0ff61098dba6)
+
+
 ```
 print(X_train)
 print(len(X_train))
 ```
 
+![Screenshot 2024-08-23 212258](https://github.com/user-attachments/assets/0958c415-e806-48e9-8bdf-311d4aba2c97)
 
 
 ```
@@ -127,14 +131,11 @@ print(X_test)
 print(len(X_test))
 ```
 
+![Screenshot 2024-08-23 212603](https://github.com/user-attachments/assets/5e69c228-4503-4949-a955-7972a88057d7)
 
 
 
 
-
-
-## OUTPUT:
-SHOW YOUR OUTPUT HERE
 
 
 ## RESULT:

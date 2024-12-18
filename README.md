@@ -41,99 +41,69 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
+
+df.isnull().sum()
+
+df.duplicated()
+
+print(df['CreditScore'].describe())
+
+df.info()
+
+df.drop(['Surname','CustomerId','Geography','Gender'],axis=1,inplace=True)
+df
+
+scaler=MinMaxScaler()
+df=pd.DataFrame(scaler.fit_transform(df))
+df
+
+X = df.iloc[:, :-1].values
+print(X)
+
+y = df.iloc[:,-1].values
+print(y)
+
+X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,random_state=25)
+
+print(X_train)
+print(len(X_train))
+
+print(X_test)
+print(len(X_test))
 ```
 
 ![Screenshot 2024-08-23 210606](https://github.com/user-attachments/assets/d696168d-0f0b-4514-896a-3233266a5c5e)
 
 
-```
-df.isnull().sum()
-```
-
 ![Screenshot 2024-08-23 210712](https://github.com/user-attachments/assets/2f580f64-1819-4d16-aa62-49d4b74acd21)
 
 
-```
-df.duplicated()
-```
 
 ![Screenshot 2024-08-23 211144](https://github.com/user-attachments/assets/c7b169d7-7574-4b26-aaf9-e9812f73a429)
 
 
-
-```
-print(df['CreditScore'].describe())
-```
-
 ![Screenshot 2024-08-23 211254](https://github.com/user-attachments/assets/233dd336-df2b-4303-a916-2837e5cf05a4)
 
-
-
-```
-df.info()
-```
 
 ![Screenshot 2024-08-23 211526](https://github.com/user-attachments/assets/9334db11-9036-44e5-ba7b-d73f22d45359)
 
 
-```
-df.drop(['Surname','CustomerId','Geography','Gender'],axis=1,inplace=True)
-df
-```
-
 ![Screenshot 2024-08-23 211731](https://github.com/user-attachments/assets/6afea769-48f1-4c61-afdb-5d230885ecde)
-
-
-```
-scaler=MinMaxScaler()
-df=pd.DataFrame(scaler.fit_transform(df))
-df
-```
 
 
 ![Screenshot 2024-08-23 211824](https://github.com/user-attachments/assets/940fb085-ddde-4d44-9de4-93d710c7bc7d)
 
-
-```
-X = df.iloc[:, :-1].values
-print(X)
-```
-
-
 ![Screenshot 2024-08-23 211959](https://github.com/user-attachments/assets/f63c7d37-7d10-4a7e-aafe-689ed7c0df85)
 
-
-```
-y = df.iloc[:,-1].values
-print(y)
-```
-
 ![Screenshot 2024-08-23 212058](https://github.com/user-attachments/assets/45baeb88-a113-4d38-b17d-f0cd4de23d5a)
-
-
-```
-X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.2,random_state=25)
-```
 
 ![Screenshot 2024-08-23 212209](https://github.com/user-attachments/assets/1a8da19f-1632-45ad-907f-0ff61098dba6)
 
 
-```
-print(X_train)
-print(len(X_train))
-```
-
 ![Screenshot 2024-08-23 212258](https://github.com/user-attachments/assets/0958c415-e806-48e9-8bdf-311d4aba2c97)
 
 
-```
-print(X_test)
-print(len(X_test))
-```
-
 ![Screenshot 2024-08-23 212603](https://github.com/user-attachments/assets/5e69c228-4503-4949-a955-7972a88057d7)
-
-
 
 
 
